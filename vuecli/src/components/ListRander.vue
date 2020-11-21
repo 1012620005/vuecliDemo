@@ -60,15 +60,15 @@ export default {
       // 排序
       if(orderType){
         arr.sort((p1, p2) => {
-                        if (orderType === 2) { // 降序
-                            return p2.age - p1.age
-                        } else { // 升序
-                            return p1.age - p2.age
-                        }
-                    })
+           if (orderType === 2) { // 降序
+                  return p2.age - p1.age
+            } else { // 升序
+                  return p1.age - p2.age
+            }
+        })
       }
       
-        return arr
+      return arr
     }
       }
       
